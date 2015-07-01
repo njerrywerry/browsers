@@ -1,0 +1,15 @@
+HOW BROWSERS WORK
+commonly used browsers include (for desktops) Firefox, Chrome, Internet Explorer, Safari, Opera; and mobile browsars include Android, IPhone, Opera Mini, Chrome, UC browser, among others.
+the work of a browser is to present the web resource chosen by requesting it from the server and displaying it in the browser window. this is its main functionality. resources incluse html files, pdfs, images, etc.
+
+UI elements that are common across most browsers include an address bar for typing in the URL's, back/forward buttons, bookmarking options, refresh/stop buttons, home button, etc.
+
+browser components include the UI (user interface), the browser engine (which facilitates actions between the UI and the rendering engine), the rendering engine (which displays content), networking (for making network calls), UI back end (used to draw basic widgets), JS interpreter (for parsing and executing JS code), and the data storage, which is used to store data locally (eg. in databases such as WebSQL, IndexedDB).
+
+browsers have rendering engines which are used to render or deliver the requested resources to the screen. they ddisplay html and xml by default, but they display other types of data using plugins. rendering engines include Trident for Internet Explorer, Gecko for Firefox, Webkit for Safari, Blink (whick is a fork of Webkit) for Opers and Chrome.
+
+the main flow of rendering includes parsing html to construct the DOM (Document Object Model), render tree construction where the render tree is constructed using css, formulating the layout of the render tree which includes giving the nodes exact coordinates where they appear on the screen, and finally painting the render tree using the UI back end.
+
+Parsing
+parsing is transating a document into a structure usable by code. it is defined by the grammars of the document, is. the syntax rules the document obeys. the process of parsing can be broken down into two processes; lexical analysis (performed by the lexer) where input is broken down into tokens (the language vocabulary), and the syntax analysis (performed by the parser) which entails applying language syntax rules. 
+there are two types of parsers; top down parser examines high level tructure of the syntax first reying to find a rule to match, and bottom up parser which starts with the input and works its way up transforming it into syntax tules.
